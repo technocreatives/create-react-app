@@ -129,6 +129,12 @@ module.exports = function (webpackEnv) {
           // https://github.com/facebook/create-react-app/issues/2677
           ident: 'postcss',
           plugins: () => [
+            // add special support for inline SVG strings
+            // (used to enable interpolation with SCSS vars)
+            require('postcss-base64')({
+              pattern: /<svg.*<\/svg>/i,
+              prepend: 'data:image/svg+xml;base64,'
+            }),
             require('postcss-flexbugs-fixes'),
             require('postcss-preset-env')({
               autoprefixer: {

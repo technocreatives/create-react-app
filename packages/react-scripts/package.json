@@ -1,10 +1,10 @@
 {
-  "name": "react-scripts",
-  "version": "4.0.1",
+  "name": "ttc-react-scripts-with-postcss-tweaks",
+  "version": "4.0.1-patch.1",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/technocreatives/create-react-app.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
@@ -12,7 +12,7 @@
     "node": "^10.12.0 || >=12.0.0"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/technocreatives/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -65,6 +65,7 @@
     "mini-css-extract-plugin": "0.11.3",
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "pnp-webpack-plugin": "1.6.4",
+    "postcss-base64": "^0.7.1",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-loader": "3.0.0",
     "postcss-normalize": "8.0.1",
