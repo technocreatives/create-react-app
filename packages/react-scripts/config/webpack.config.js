@@ -402,6 +402,11 @@ module.exports = function (webpackEnv) {
                 name: 'static/media/[name].[hash:8].[ext]',
               },
             },
+            // Make SVGs work real well
+            {
+              test: /\.svg$/,
+              use: ['@svgr/webpack?+titleProp,+ref![path],expandProps=end'],
+            },
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {
