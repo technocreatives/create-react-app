@@ -49,10 +49,10 @@ declare module '*.svg' {
 
   export const ReactComponent: React.FunctionComponent<React.SVGProps<
     SVGSVGElement
-  > & { title?: string }>;
+  > & { title?: string, className?: string, id?: string }>;
 
   const src: string;
-  export default src;
+  export default ReactComponent;
 }
 
 declare module '*.module.css' {
